@@ -11,6 +11,7 @@ function App() {
   let characterClass = classArray[Math.floor(Math.random()*classArray.length)];
   return (
     <div className="App">
+      <h1>Create Your DnD 5e Character!</h1>
       <RaceCards />
       <ClassCards />
       <CharacterForm race={race} characterClass={characterClass}/>
