@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import Form from './Form'
+import CharacterForm from './Form'
 import RaceCards from './RaceCards'
 import ClassCards from './ClassCards'
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <RaceCards />
       <ClassCards />
-      <Form race={race} characterClass={characterClass}/>
+      <CharacterForm race={race} characterClass={characterClass}/>
     </div>
   );
 }
