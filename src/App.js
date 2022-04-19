@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <h1>Create Your DnD 5e Character!</h1>
+      <h2>Choose Your Race</h2>
       <RaceCards />
+      <h2>Choose Your Class</h2>
       <ClassCards />
       <CharacterForm race={race} characterClass={characterClass}/>
     </div>
