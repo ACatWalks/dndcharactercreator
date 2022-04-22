@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.css'
 
-function ClassCards() {
+function ClassCards(props) {
     return (
         <div>
             <Card>
@@ -11,7 +11,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Barbarian</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/barbarian' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Barbarian</Button>
+                    <Button variant='primary' id='Barbarian' onClick={props.onClick}>Choose Barbarian</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -19,7 +19,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Bard</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/bard' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Bard</Button>
+                    <Button variant='info' id='Bard' onClick={props.onClick}>Choose Bard</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -27,7 +27,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Cleric</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/cleric' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Cleric</Button>
+                    <Button variant='info' id='Cleric' onClick={props.onClick}>Choose Cleric</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -35,7 +35,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Druid</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/druid' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Druid</Button>
+                    <Button variant='info' id='Druid' onClick={props.onClick}>Choose Druid</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -43,7 +43,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Fighter</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/fighter' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Fighter</Button>
+                    <Button variant='primary' id='Fighter' onClick={props.onClick}>Choose Fighter</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -51,7 +51,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Monk</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/monk' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Monk</Button>
+                    <Button variant='primary' id='Monk' onClick={props.onClick}>Choose Monk</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -59,7 +59,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Paladin</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/paladin' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Paladin</Button>
+                    <Button variant='primary' id='Paladin' onClick={props.onClick}>Choose Paladin</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -67,7 +67,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Ranger</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/ranger' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Ranger</Button>
+                    <Button variant='primary' id='Ranger' onClick={props.onClick}>Choose Ranger</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -75,7 +75,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Rogue</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/rogue' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='primary'>Choose Rogue</Button>
+                    <Button variant='primary' id='Rogue' onClick={props.onClick}>Choose Rogue</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -83,7 +83,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Sorcerer</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/sorcerer' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Sorcerer</Button>
+                    <Button variant='info' id='Sorcerer' onClick={props.onClick}>Choose Sorcerer</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -91,7 +91,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Warlock</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/warlock' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Warlock</Button>
+                    <Button variant='info' id='Warlock' onClick={props.onClick}>Choose Warlock</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -99,7 +99,7 @@ function ClassCards() {
                 <Card.Body>
                     <Card.Title>Wizard</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/classes/wizard' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='info'>Choose Wizard</Button>
+                    <Button variant='info' id='Wizard' onClick={props.onClick}>Choose Wizard</Button>
                 </Card.Body>
             </Card>
         </div>

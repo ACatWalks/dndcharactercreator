@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.css'
 
-function RaceCards() {
+function RaceCards(props) {
     return (
         <div>
             <Card>
@@ -11,7 +11,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Dwarf</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/13-dwarf' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='danger'>Choose Dwarf</Button>
+                    <Button variant='danger' id='Dwarf' onClick={props.onClick}>Choose Dwarf</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -19,7 +19,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Elf</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/3-elf' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='success'>Choose Elf</Button>
+                    <Button variant='success' id='Elf' onClick={props.onClick}>Choose Elf</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -27,7 +27,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Halfling</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/14-halfling' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='warning'>Choose Halfling</Button>
+                    <Button variant='warning' id='Halfling' onClick={props.onClick}>Choose Halfling</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -35,7 +35,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Human</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/1-human' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='secondary'>Choose Human</Button>
+                    <Button variant='secondary' id='Human' onClick={props.onClick}>Choose Human</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -43,7 +43,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Dragonborn</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/16-dragonborn' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='danger'>Choose Dragonborn</Button>
+                    <Button variant='danger' id='Dragonborn' onClick={props.onClick}>Choose Dragonborn</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -51,7 +51,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Gnome</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/18-gnome' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='success'>Choose Gnome</Button>
+                    <Button variant='success' id='Gnome' onClick={props.onClick}>Choose Gnome</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -59,7 +59,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Half-Elf</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/20-half-elf' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='success'>Choose Half-Elf</Button>
+                    <Button variant='success' id='Half-Elf' onClick={props.onClick}>Choose Half-Elf</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -67,7 +67,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Half-Orc</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/2-half-orc' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='secondary'>Choose Half-Orc</Button>
+                    <Button variant='secondary' id='Half-Orc' onClick={props.onClick}>Choose Half-Orc</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -75,7 +75,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Tiefling</Card.Title>
                     <Card.Link href='https://www.dndbeyond.com/races/7-tiefling' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='dark'>Choose Tiefling</Button>
+                    <Button variant='dark' id='Tiefling' onClick={props.onClick}>Choose Tiefling</Button>
                 </Card.Body>
             </Card>
             <Card>
@@ -83,7 +83,7 @@ function RaceCards() {
                 <Card.Body>
                     <Card.Title>Aasimar</Card.Title>
                     <Card.Link href='http://dnd5e.wikidot.com/aasimar' target='_blank' rel='noreferrer noopener'>Learn More</Card.Link>
-                    <Button variant='light'>Choose Aasimar</Button>
+                    <Button variant='light' id='Aasimar' onClick={props.onClick}>Choose Aasimar</Button>
                 </Card.Body>
             </Card>
         </div>
